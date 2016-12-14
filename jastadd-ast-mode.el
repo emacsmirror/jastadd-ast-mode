@@ -54,6 +54,7 @@
           (* whitespace) ":")
      1)))
 
+;;;###autoload
 (define-derived-mode jastadd-ast-mode prog-mode "JastAdd"
   "Major mode for editing JastAdd AST files.
 \\{jastadd-ast-mode-map}"
@@ -76,8 +77,8 @@
               (lambda () (speedbar-add-supported-extension ".abs"))))
   )
 
-(unless (assoc "\\.ast\\'" auto-mode-alist)
-  (add-to-list 'auto-mode-alist '("\\.abs\\'" . jastadd-ast-mode)))
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.ast\\'" . jastadd-ast-mode) t)
 
 (provide 'jastadd-ast-mode)
 
