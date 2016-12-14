@@ -72,9 +72,9 @@
   (setq imenu-generic-expression jastadd-ast--imenu-generic-expression)
   (imenu-add-menubar-index)
   (if (featurep 'speedbar)
-      (speedbar-add-supported-extension ".abs")
+      (speedbar-add-supported-extension ".ast")
     (add-hook 'speedbar-load-hook
-              (lambda () (speedbar-add-supported-extension ".abs"))))
+              (lambda () (speedbar-add-supported-extension ".ast"))))
   )
 
 ;;;###autoload
