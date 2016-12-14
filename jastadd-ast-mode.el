@@ -5,7 +5,7 @@
 ;; Author: Rudi Schlatte <rudi@constantly.at>
 ;; URL: https://github.com/rudi/jastadd-ast-mode
 ;; Package-Version: 0.1
-;; Keywords: programming languages
+;; Keywords: languages
 ;; Version: 0.1
 
 ;; This file is NOT part of GNU Emacs.
@@ -29,8 +29,10 @@
 ;;; Commentary:
 ;;
 ;; This mode provides light support for editing of JastAdd AST definition
-;; files in Emacs.  Currently, this means syntax highlighting, comment support
-;; and buffer navigation via imenu.
+;; files in Emacs.  JastAdd is a meta-compilation system that supports
+;; Reference Attribute Grammars (RAGs); see http://jastadd.org.  Currently,
+;; this mode supports syntax highlighting, comment support and buffer
+;; navigation via imenu.
 ;;
 
 ;;; Code:

@@ -1,6 +1,9 @@
 * A JastAdd AST mode for Emacs
 
-This mode provides light support for editing of [[http://jastadd.org/][JastAdd]] AST definition files
+[[http://jastadd.org/][JastAdd]] is a meta-compilation system that supports Reference Attribute
+Grammars (RAGs).
+
+This mode provides light support for editing of JastAdd AST definition files
 for the Emacs editor.  Currently, this means syntax highlighting, comment
 support and navigation to definitions via imenu.
 
