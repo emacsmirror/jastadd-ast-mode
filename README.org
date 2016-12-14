@@ -1,8 +1,21 @@
 * A JastAdd AST mode for Emacs
 
-This mode provides light support for editing of JastAdd AST definition files
+This mode provides light support for editing of [[http://jastadd.org/][JastAdd]] AST definition files
 for the Emacs editor.  Currently, this means syntax highlighting, comment
 support and navigation to definitions via imenu.
 
 Note that this mode does not implement support for =jadd= and =jrag= files;
 the Java mode(s) provided by Emacs work ok for these file types.
+
+** Installation
+
+Using John Wiegley's excellent [[https://github.com/jwiegley/use-package][use-package]] package:
+
+#+BEGIN_SRC elisp
+(use-package jastadd-ast-mode
+  :load-path "~/Source/jastadd-ast-mode"
+  :mode "\\.ast\\'")
+#+END_SRC
+
+(This assumes you cloned the repository at =~/Source/jastadd-ast-mode/=;
+adjust to taste.)
