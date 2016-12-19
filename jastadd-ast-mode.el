@@ -5,6 +5,7 @@
 ;; Author: Rudi Schlatte <rudi@constantly.at>
 ;; URL: https://github.com/rudi/jastadd-ast-mode
 ;; Package-Version: 0.1
+;; Package-Requires: ((emacs "24"))
 ;; Keywords: languages
 ;; Version: 0.1
 
