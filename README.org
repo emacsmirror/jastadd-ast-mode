@@ -1,5 +1,7 @@
 * A JastAdd AST mode for Emacs
 
+[[https://melpa.org/#/jastadd-ast-mode][file:https://melpa.org/packages/jastadd-ast-mode-badge.svg]]
+
 [[http://jastadd.org/][JastAdd]] is a meta-compilation system that supports Reference Attribute
 Grammars (RAGs).
 
@@ -12,7 +14,9 @@ the Java mode(s) provided by Emacs work ok for these file types.
 
 ** Installation
 
-Using John Wiegley's excellent [[https://github.com/jwiegley/use-package][use-package]] package:
+You can install the package from melpa via =M-x package-install=.
+
+To install from a local checkout, use John Wiegley's excellent [[https://github.com/jwiegley/use-package][use-package]]:
 
 #+BEGIN_SRC elisp
 (use-package jastadd-ast-mode
