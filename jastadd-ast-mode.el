@@ -4,10 +4,10 @@
 
 ;; Author: Rudi Schlatte <rudi@constantly.at>
 ;; URL: https://github.com/rudi/jastadd-ast-mode
-;; Package-Version: 0.1
-;; Package-Requires: ((emacs "24"))
+;; Package-Version: 0.2
+;; Package-Requires: ((emacs "25"))
 ;; Keywords: languages
-;; Version: 0.1
+;; Version: 0.2
 
 ;; This file is NOT part of GNU Emacs.
 
@@ -48,12 +48,12 @@
 (defvar jastadd-ast--imenu-generic-expression
   `(("*Abstract Definitions*"
      ,(rx bol (* whitespace) "abstract" (* whitespace)
-          (group (char upper) (* char alnum))
+          (group (char upper) (* (char alnum)))
           (* whitespace) ":")
      1)
     (nil
      ,(rx bol (* whitespace)
-          (group (char upper) (* char alnum))
+          (group (char upper) (* (char alnum)))
           (* whitespace) ":")
      1)))
 
